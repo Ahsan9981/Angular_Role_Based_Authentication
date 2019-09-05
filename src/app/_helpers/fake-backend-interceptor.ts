@@ -3,7 +3,9 @@ import { HttpInterceptor, HTTP_INTERCEPTORS, HttpRequest, HttpResponse, HttpHand
 import { throwError, of, Observable } from 'rxjs';
 import { delay, merge, materialize, dematerialize, mergeMap } from 'rxjs/operators';
 
-import { User, Role } from 'app/_models';
+import { User, Role } from '../_models';
+
+// import { User, Role } from 'app/_models';
 
 const users: User[] = [
     { id: 1, username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'User', role: Role.Admin },
