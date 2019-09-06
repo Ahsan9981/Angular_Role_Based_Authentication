@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -20,8 +20,8 @@
     ]
   },
   "paths": {
-    "app/*": ["src/app/*"],
-    "$environments/*": ["src/environments/*"]
+    "@app/*": ["app/*"],
+    "@environments/*": ["environments/*"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

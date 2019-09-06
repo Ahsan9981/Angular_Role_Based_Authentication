@@ -1,4 +1,4 @@
-import { Role } from './role.enum';
+import { Role } from 'app/_models';
 
 export class User {
 
