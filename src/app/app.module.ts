@@ -6,8 +6,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FakeBackendInterceptor, JwtInterceptor, ErrorInterceptor } from './_helpers';
 
 // Feature Modules
-import { AdminModule  } from 'app/modules/core/admin/admin.module';
-
+import { AdminModule } from 'app/modules/core/admin/admin.module';
+import { UserModule } from 'app/modules/core/user/user.module';
 
 // Common Functionality Modules
 
@@ -22,6 +22,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    UserModule,
     AdminModule,
     AppRoutingModule
   ],
