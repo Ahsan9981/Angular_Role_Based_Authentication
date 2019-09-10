@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
-import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
 
+import { AuthGuard } from 'app/_helpers';
 
 const routes: Routes = [
-  { path: 'user-dashboard', component: UserDashboardComponent }
+  { path: '', component: UserDashboardComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)

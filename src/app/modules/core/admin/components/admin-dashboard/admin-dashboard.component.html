@@ -4,7 +4,7 @@
     <div class="card-body">
         <p>This page can only be visited by <u>administrators</u></p>
         <p class="mb-1">List of all users registered in system:</p>
-        <div *ngIf="loading; else #elseBlock" class="spinner-border spinner-border-m"></div>
+        <div *ngIf="loading; else elseBlock" class="spinner-border spinner-border-m"></div>
         <ng-template #elseBlock>
             <ul>
                 <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>

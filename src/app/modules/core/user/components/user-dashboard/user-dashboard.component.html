@@ -1,0 +1,15 @@
+<div class="card mt-4">
+    <h4 class="card-header">User Information</h4>
+    <div class="card-body">
+        <p>You are logged using Fake JWT !!</p>
+        <p>Your role is: <strong>{{currentUser.role}}</strong></p>
+        <p>This page can be accessed by <u>all authenticated users</u></p>
+        <p class="mb-1">Current user information is :</p>
+        <div *ngIf="loading; else elseBlock" class="spinner-border spinner-border-sm"></div>
+        <ng-template #elseBlock>
+            <ul>
+                <li>{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
+            </ul>
+        </ng-template>
+    </div>
+</div>

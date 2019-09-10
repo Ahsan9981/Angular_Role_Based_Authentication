@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // Custom Interceptors
 import { FakeBackendInterceptor, JwtInterceptor, ErrorInterceptor } from './_helpers';
 
 // Feature Modules
+import { PublicModule } from 'app/modules/core/public/public.module';
 import { AdminModule } from 'app/modules/core/admin/admin.module';
 import { UserModule } from 'app/modules/core/user/user.module';
 
@@ -22,8 +24,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
     UserModule,
     AdminModule,
+    PublicModule,
     AppRoutingModule
   ],
   providers: [

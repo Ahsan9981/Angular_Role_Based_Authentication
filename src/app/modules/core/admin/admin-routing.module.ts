@@ -4,12 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 
+import { AuthGuard } from 'app/_helpers';
+import { Role } from 'app/_models';
+
 const routes: Routes = [
-  { path: 'admin-dashboard', component: AdminDashboardComponent }
+  {
+    path: 'dashboard',
+    component: AdminDashboardComponent,
+    canActivate: [AuthGuard],
+    data: { roles: [Role.Admin] }
+  }
 ];
 
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
