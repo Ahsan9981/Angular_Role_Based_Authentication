@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // Custom Interceptors
@@ -12,6 +11,10 @@ import { AdminModule } from 'app/modules/core/admin/admin.module';
 import { UserModule } from 'app/modules/core/user/user.module';
 
 // Common Functionality Modules
+import { SharedModule } from 'app/modules/shared/shared.module';
+
+// User Defind Functionality Modules
+
 
 // App Module Related Imports
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +27,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    SharedModule,
     UserModule,
     AdminModule,
     PublicModule,
