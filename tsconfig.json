@@ -20,8 +20,8 @@
     ]
   },
   "paths": {
-    "@app/*": ["app/*"],
-    "@environments/*": ["environments/*"]
+    "app/*": ["app/*"],
+    "environments/*": ["environments/*"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
