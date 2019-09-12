@@ -11,6 +11,7 @@ guidelines provided on angular.io.
 5.  Use of shared-module to provide different functionality in feature modules.
 6.  Short Import syntax as a productivity hack.
 7.  Module Based routing and feature module. [Version 1].
-8.  Lazy Loading of feature modules and routing. [Version 2]
-9.  Angular authentication guard implementation & application.
-10. Error Handling in Angular.
+8.  Data Resolvers Demo. [Version 2].
+9.  Lazy Loading of feature modules and routing. [Version 3].
+10. Angular authentication guard implementation & application.
+11. Error Handling in Angular.
