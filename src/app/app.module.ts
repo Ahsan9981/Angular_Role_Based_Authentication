@@ -5,10 +5,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 // Custom Interceptors
 import { FakeBackendInterceptor, JwtInterceptor, ErrorInterceptor } from './_helpers';
 
-// Feature Modules
+// Feature Eagerly Loaded Modules
 import { PublicModule } from 'app/modules/core/public/public.module';
-import { AdminModule } from 'app/modules/core/admin/admin.module';
-import { UserModule } from 'app/modules/core/user/user.module';
 
 // Common Functionality Modules
 import { SharedModule } from 'app/modules/shared/shared.module';
@@ -28,7 +26,6 @@ import { AppComponent } from './app.component';
     BrowserModule,
     HttpClientModule,
     SharedModule,
-    UserModule,
     PublicModule,
     AppRoutingModule
   ],
