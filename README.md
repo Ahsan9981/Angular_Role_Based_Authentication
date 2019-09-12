@@ -15,3 +15,5 @@ guidelines provided on angular.io.
 9.  Lazy Loading of feature modules and routing. [Version 3].
 10. Angular authentication guard implementation & application.
 11. Error Handling in Angular.
+
+TEST TEST TEST
