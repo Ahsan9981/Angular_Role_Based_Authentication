@@ -29,7 +29,6 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     SharedModule,
     UserModule,
-    AdminModule,
     PublicModule,
     AppRoutingModule
   ],
