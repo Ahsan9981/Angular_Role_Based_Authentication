@@ -10,10 +10,10 @@ import { PublicModule } from 'app/modules/core/public/public.module';
 import { AdminModule } from 'app/modules/core/admin/admin.module';
 import { UserModule } from 'app/modules/core/user/user.module';
 
-// Common Functionality Modules
+// Common Functionality Angular Modules
 import { SharedModule } from 'app/modules/shared/shared.module';
 
-// User Defind Functionality Modules
+// User Defind Common Functionality Modules
 
 
 // App Module Related Imports
