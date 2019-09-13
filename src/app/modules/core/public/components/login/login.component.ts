@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
     });
 
     // Get return url from route parameters or default to '/'
-    this.returnUrl = this.route.snapshot.queryParams.returnUrl || '/';
+    this.returnUrl = this.route.snapshot.queryParams.returnUrl || '/user';
 
   }
 
@@ -55,6 +55,7 @@ export class LoginComponent implements OnInit {
     }
 
     this.loading = true;
+    debugger;
     this.authenticationService.login(this.f.username.value, this.f.password.value).pipe(first()).subscribe(
       data => {
         this.router.navigate([this.returnUrl]);
