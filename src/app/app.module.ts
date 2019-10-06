@@ -5,6 +5,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 // Custom Interceptors
 import { FakeBackendInterceptor, JwtInterceptor, ErrorInterceptor } from './_helpers';
 
+// Data Resolvers
+import { SingleUserResolverService } from 'app/_resolvers';
+
 // Feature Modules
 import { PublicModule } from 'app/modules/core/public/public.module';
 import { AdminModule } from 'app/modules/core/admin/admin.module';
@@ -34,6 +37,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule
   ],
   providers: [
+    SingleUserResolverService,
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: FakeBackendInterceptor, multi: true }

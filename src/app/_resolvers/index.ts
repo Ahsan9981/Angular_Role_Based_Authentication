@@ -1,0 +1,1 @@
+export * from './single-user-resolver.service';

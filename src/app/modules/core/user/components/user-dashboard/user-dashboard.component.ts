@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { first } from 'rxjs/operators';
 
 import { User } from 'app/_models';
@@ -14,7 +15,7 @@ export class UserDashboardComponent implements OnInit {
   currentUser: User;
   userFromApi: User;
 
-  constructor(private userService: UserService,
+  constructor(private route: ActivatedRoute,
               private authenticationService: AuthenticationService) {
 
     this.currentUser = this.authenticationService.CurrentUserValue;
@@ -22,12 +23,7 @@ export class UserDashboardComponent implements OnInit {
 
   ngOnInit() {
 
-    this.loading = true;
-    this.userService.getById(this.currentUser.id).pipe(first()).subscribe(user => {
-      this.userFromApi = user;
-      this.loading = false;
-    });
-
+    this.userFromApi = this.route.snapshot.data.user as User;
   }
 
 }
