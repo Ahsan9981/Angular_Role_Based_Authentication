@@ -24,10 +24,6 @@ https://jasonwatmore.com/post/2019/08/06/angular-8-role-based-authorization-tuto
 
 2. Lazy Loading & Eager Module Loading in Angular:
 
-https://www.google.com/search?q=what+feature+modules+should+be+lazy+loaded+and+which+shouldn%27t+be&oq=what+feature+modules+should+be+lazy+loaded+and+which+shouldn%27t+be&aqs=chrome..69i57.22186j0j7&sourceid=chrome&ie=UTF-8
-
-https://www.google.com/search?q=dev.io+angular+8+lazy+loading&oq=dev.io&aqs=chrome.2.69i58j69i57j69i59j0j5.4321j0j7&sourceid=chrome&ie=UTF-8
-
 https://alligator.io/angular/lazy-loading/
 
 https://angular.io/guide/lazy-loading-ngmodules
@@ -37,8 +33,6 @@ https://angular.io/guide/lazy-loading-ngmodules
 https://dormoshe.io/daily-news/error-handling-in-angular-1988.1?utm_source=facebook&utm_campaign=facebook
 
 4. Data Resolvers Implementation & Application:
-
-https://www.google.com/search?q=data+resolver+in+angular&oq=data+resolver+in+angular+&aqs=chrome..69i57j0.14081j0j7&sourceid=chrome&ie=UTF-8
 
 https://angular.io/api/router/Resolve#description
 
